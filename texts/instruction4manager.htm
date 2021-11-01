@@ -1,0 +1,168 @@
+<p class=ttit>INTRODUCTION<p>
+
+<p class=parag>
+BES-III shift web application has all necessary tools to maintain and support
+the shifting routine. It is based on Apache web server, MySQL database, and is tested
+for the 'big five' browsers: Firefox, Chrome, Opera, Safari, IE.
+Best viewed with anything but IE. If you are still using IE - the 'Document Mode' setting in the browser must be changed from 'Quirks' to 'Internet Explorer standards'.
+</p>
+
+<p class=ttit>PROFILE</p>
+
+<p class=parag>
+Each BES-III member has got now a personilized access to the shifting system and, accordingly, an access
+to his personal profile. Your name at the lower right screen corner is a link to invoke a form
+for viewing/editing your personal data. Some form fields are read-only. If any read-only data is wrong, please contact the BES-III shift manager and your institute representative.<br>
+Notice, please, a password field when left empty results to automatic generating a new one, that
+would be sent to you by e-mail to the e-mail address set in the BES-III database.<br>
+Correct e-mail address is very important as all the notifications and confirmations would be sent there.
+So be sure it is set correctly in the BES-III Collaboration database.
+</p>
+
+<p class=ttit>SHIFTS</p>
+
+<p class=parag>
+Having studied the shift policy, read this instruction and checked up or edited your personal profile - you are ready to manage your shifts.
+<p class=parag>There are several views for that, the default one is a 'Calendar View'. This is a page you normally see on entering the system. The navigation is very simple: you've got a "Home" link that brings you back to 'Calendar View' - there is a 'home' icon and the title 'Bes-III Shifts' in the top left page corner.
+<p class=parag>Below that is a small calendar with 'previous month', 'next month' red arrows, direct month and year selectors, month day selectors. That would be quite enough to find and view any date within a shift round - past, current or future.
+<p class=parag>Two buttons below the small calendar allow you to switch between two views - 'month' (default) and 'round'. Round view allows to look at the whole data taking period at once and it is described below.
+<p class=parag>Round, institution and author input fields are autocompleted while you type in.
+'Round' and 'Institution' fields start doing it after the 1nd symbol typed, 
+'Author' - after the 2nd symbol typed. These fields supply data for 'Roster' and 'Stats' tables, which are described below.
+
+<p class=parag>To the right is a monthly display of all open or booked shifts.
+
+<p class=parag><b>To book a shift</b> you need to point and click on any 'open' position specified: 
+chief or ordinary shifter; night, day or evening. Shift blocks are highlighted according to your
+choice. Once you choose a shift block, a dialogue with all necessary info will pop up for your approval/cancelling. As soon as you 'book' a shift - you'll be able to 'edit' it: cancel or exchange for another block. Note, that holidays are marked with pink color - for you to know when you are assigned 0.5 extra points per shift. After you book shifts, you will receive two reminder e-mails 3 and 7 days before the shift block starts.
+ 
+<p class=parag><b>Cancelling shifts</b> is simple: select your shift block by clicking with a mouse pointer on your name and press button 'Reject' in the dialogue which pops up. If you cancel shift very close to the start of your shift block, you will be requested to ask the BES-III shift manager to approve your action.
+
+<p class=parag><b>Exchanging shifts</b> is done nearly the same way: first - select the shift block that you wish to exchange. Then select the one you'd like to get from another shifter. And at last - ask
+that shifter to exchange his/her block with yours (this is done at the left panel).
+
+<p class=parag>After any action (booking, cancelling or exchange) you should get a notification e-mail.
+
+<p class=tsubtit>Round View</p>
+
+<p class=parag>
+This view is convenient to check up the whole shift round for open shift at a glance. The day cells are colored according to the legend below the table. Clicking on a month would bring you to the selected month view to manage shifts. Hovering mouse over a holiday would display its name.
+</p>
+
+<p class=ttit>ROSTER</p>
+<p class=parag>
+To view the whole list of BES-III institutions just press the 'Roster' button. 
+If you'd like to see members of a particular institution, select this institution by starting
+to type its abbreviated name (at least 2 letters) in the form and then select it from the 
+autocompletion list appearing below. The form is case insensitive.<br>
+</p>
+
+<p class=ttit>STATISTICS</p>
+<p class=parag>
+Compared to 'Roster' operation - you may additionally specify a shift period
+to get the statistics, and get that of a single person.
+</p>
+
+<p class=ttit>SHIFT MANAGER ACTIONS</p>
+
+<p class=parag>
+As a person responsible for the whole shifting BES-III routine - you should carefully
+read the section below, written especially for you. A lot of automacy is involved, but sure,
+dealing with people by itself disables the total automacy. Alas.<br>
+For the system to fuction properly - managers are to provide necesary data.
+Some steps are to be fullfilled before others and it's important to do it as it's supposed
+and awaited by the system design. At least  for eliminating the  future possible headache :)).<br>  
+</p>
+
+<p class=tsubtit>Access rights hierarchy</p>
+
+<p class=parag>
+According to the access rights all the users are devided into 4 groups: : manager-superadmin, manager, instrep, shifter.
+A <b>manager-superadmin</b> is the only manager with a direct access to system databases.
+And the only entity that he/she can edit is the flag defining if a person is the system manager.
+All of the rest operations are done via the system user interface (UI).
+<b>Managers</b> can edit ANY data via the system UI and in parallel be plain shifters as well (chief or ordinary) 
+with one exception: they cannot edit each others' profile - only their own.  
+<b>Institution representatives</b> (instrep) have but one - compared to plain shifters - additionall right:
+to modify their native institution descriptive data.
+Plain <b>shifters</b> have the right to manipulate their own shifts and to view and partially edit their profile.
+</p>
+
+<p class=tsubtit>Starting a new round</p>
+
+<p class=parag>
+The titles for the input fields on the default (monthly) page - serve as links to invoke
+dialogues for editing appropriate data. And first thing to be done is a new shift round period
+creation. To create something new (round, institution or user) - leave the input field empty
+and click on it's title. So, <b>creating a round</b> - just click on the word 'Round:' leaving its name empty.
+A dialog would be displayed enabling to enter new round's name (say 1212_b, or whatever you wish),
+its beginning and finish dates.<br>
+The round would be created on pressing the 'save' button, and the status 'new' would be assigned to it.
+The 'new'-status means your are now able to edit it, and begin the neccessary preparations for opening it.<br>
+The next thing you must do - is to fill up the <b>holidays table</b> for this round. If you do this later - you'll
+have a mess with extra (holiday) shift points assigning. So be sure to 'click' on the word 'Holidays.' just
+near the word 'Round:'. Once the round is open - you'll be not able to edit the holidays table!!!<br>
+Clicking on 'date' entry field would invoke a calendar dialogue to select a date. 
+Leaving a holiday name empty (or erasing its name) - leads to deleting the entry from the list.
+The sequence is not important, so to add a holiday - just use the next empty slot.<br>
+Another important thing that must be done BEFORE opening a new round - is the checking up all 
+<b>Institutions</b> data, especially the fields that are used for system automation: continent, location and contact person.
+To edit/view an instution data you may first use a Roster feature. Specify and institution typing in at least
+the 1st 2 letters of its abbreviated name. Then use the title 'Institution:' just above - as a link
+to invoke the form. <br>
+Note that setting or changing a contact person would automatically result in sending messages 
+to persons involved, notifying on their status change. The same would take place if you just
+change some data for an institution: its contact person would be informed on the change and asked
+to verify the new data.<br>
+All of the users must have passwords set to be able to enter the system and manipulate their shift
+blocks. You may do it manually or leave it for the system daily robot.
+ As soon as you 'open' a new shifts round - a lot of automatic actions would be done, including
+the random generating and sending passwords (if they are not entered or set before).<br>
+To <b>open a round</b> you should open a round editing dialogue - this time you'll see an additional
+button 'open' at its bottom. When all preliminary steps are done and you are 100% sure - press the
+button to start the 3-stage shifters notification automatic company. From that moment on -
+the round data (name and dates) and holidays table would become view-only tables. The round would gain
+the status 'open' (or 'active').
+<p>
+
+<p class=tsubtit>User profiles and shifts</p>
+
+<p class=parag>
+As a manager you may access and <b>edit any user profile</b> as necessary. A user, whose profile was changed
+by you - would be informed on the change and asked to verify the new data.<br>
+To select a user - simply start typing his/her first or last name (at least 2 letters).
+If an institution is specified (selected) - the autocomplete list would work faster and
+contain only persons from that institution. But it's not so necessary.<br>
+As soon as some person selected - you - as a manager - may: <br>
+change the person profile (using the word 'Author:' as a link for invoking a form, or<br>
+<b>assign or reject a shift block</b> for that person - by clicking on an open shift or on a booked shift 
+(a user would be informed on your action by e-mail).<br>
+If a person is not selected - you act as a plain shifter and can do everything a plain shifter does:
+booking, rejecting, exchanging shift blocks.    
+</p>
+
+<p class=tsubtit>Confirmations</p>
+
+<p class=parag>
+Any time a shifter rejects a shift block with close beginning date (see the rules) - you're sent
+a requirement to make a decision: to allow or deny the schedule change. Any of those would be sent
+to the user. In case of your approval - a correspondent change would be made in the schedule
+automatically, otherwise - none would be done, and the user would be reminded that he/she is 
+still responsible for the shifts block in question.<br>
+Block exchanges are strictly checked on rules violation and thus don't bring any trouble into your life.
+So no notifications are sent to managers, but just to the exchangers.
+</p>
+
+<p class=tsubtit>Daily report</p>
+<p class=parag>
+The system daily robot makes lots of stuff, including sending reports to managers.
+It reports your faults (while checking the system integrity) and informs on the 
+number of notifications sent, and some other things. This one is subject to change
+in future. Among the most important things that it also does - is the 3-stage
+notification company wnen you 'open' a new prepared and ready to go shifting round period.
+So be aware that the reaction to opening the round is not immediate, but delayed, as the robot
+runs but once per day.
+</p>
+
+
+<p class=parag>If you experience any difficulties using this system, please contact Alexey Zhemchugov (zhemchugov [аt] jinr.ru). 

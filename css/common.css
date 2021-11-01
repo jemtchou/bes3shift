@@ -1,0 +1,195 @@
+/* common.css */
+/* common for the whole project and contains styles not taken from jquery ui framework cs*/
+a {text-decoration: none; font-weight: bold;} 
+body {
+	margin: 0;
+	min-height: 100%;
+	font-size: 10px;
+	font-family: Arial, Trebuchet MS, Tahoma, Verdana,  sans-serif;
+}
+textarea {resize:none;} 
+.hidden_dlg{display: none;}
+#start 
+{
+  font-size: 0.7em;
+  width: 500px;
+  border: 4px;
+}
+.tiny {font-size: 0.6em;}
+.smally {font-size: 0.7em;}
+.smallb {font-size: 0.7em; font-weight: bolder;}
+.radiosel {display: inline-block;font-size: 0.7em;}
+
+.menu_section {font-size: 1.0em; font-weight: bolder;}
+.menu_item    {font-size: 0.8em; font-weight: bold;}
+
+
+.nonl {display: inline;}
+.transpar {visibility: hidden; display: inline;}
+.opaque {visibility: visible;}
+
+.eeicon
+{
+	display: inline-block;
+	position: relative;
+	top: 3px;	
+}
+.acinp 
+{
+  text-align: center;
+  font-size: 0.8em; 
+  font-weight: bolder;
+}
+
+/* calendar - month */
+
+.mcell_header
+{
+  width: 120px;
+/*  width: 200px; to make 1 line per day time */
+}
+.mcell
+{
+  height: 140px;
+  border: 2px;
+}
+.mcell_week  /* cell top: week of year */
+{  
+  height: 20px;
+  border: 1px;
+}
+.mcell_day  /* cell top: day of month */
+{  
+  text-align: right;
+  height: 20px;
+  border: 1px;
+  position: relative;
+}
+.mcell_dweek  /* = 3 mcell_dtime in height */
+{
+  height: 120px;
+  border: 1px;
+  font-size: 0.8em;  
+}
+.mcell_dtime  /*night, day, evening */
+{
+  height: 40px;
+  border: 1px;
+  font-size: 0.8em;
+  /* position: relative;  unmask this - to make 1 line per day time */
+}
+.mcell_tnight{color: #8B0000;}
+.mcell_tday{color: #00008B;}
+.mcell_teve{color: #FF3300;}
+.mcell_tweek{color: #006500;}
+
+.chief{font-weight: normal;}
+.ordinary{font-weight: normal;}
+/* mask upper 2, unmask 2 lines below - to make 1 line per day time */
+/* .chief{font-weight: normal; display: inline; text-align: left; left:0px; position: absolute;} */
+/* .ordinary{font-weight: normal; display: inline; text-align: right; right:0px; position: absolute;} */
+
+.coordinator{font-weight: normal; position: relative; top: 40px; text-align: center;}
+
+/* calendar - round */
+
+.rcell_header
+{
+  width: 198px;
+}
+.rcell
+{
+  height: 170px;
+  border: 2px;
+}
+.rcell_month_name  /* cell top: month */
+{  
+  text-align: right;
+  height: 20px;
+  border: 1px;
+  position: relative;
+}
+.rcell_month_cal  /* cell: month calendar*/
+{  
+  text-align: right;
+  height: 170px; 
+  border: 1px;
+  position: relative;
+}
+
+.rmcell_header
+{
+  width: 20px;
+  font-size: 0.8em;
+  font-weight: normal;
+}
+.rmcell
+{
+  height: 20px; /*140 */
+  border: 2px;
+  font-size: 0.8em;
+  font-weight: normal;
+}
+.rmcell_week  /* week of year */
+{  
+  height: 20px;
+  border: 1px;
+}
+.rmcell_day  /* day of month */
+{  
+  text-align: right;
+  height: 20px;
+  border: 1px;
+  position: relative;
+  font-weight: bolder;
+}
+.dot
+{
+  color: #B83400;
+  font-weight: bolder;
+}
+/* roster, stats tables */
+.listrow /*tr*/
+{
+  font-size: 0.8em;
+  font-weight: normal;
+  padding: 5px;  
+}
+.listrowred /*tr*/
+{
+  font-size: 0.8em;
+  font-weight: normal;
+  padding: 5px;
+  background-color: #ff9999;
+}
+.trow /*td*/
+{
+  padding: 0px 5px 0px 5px;  
+}
+.trowred /*td*/
+{
+  padding: 0px 5px 0px 5px;
+  background-color: #ff9999;
+}
+/* texts */
+.ttit
+{
+  font-size: 1.0em;
+  font-weight: bolder;  
+  text-align: left;
+  text-indent: 20px;
+}
+.tsubtit
+{
+  font-size: 0.8em;
+  font-weight: bold;  
+  text-align: left;
+  text-indent: 40px;
+}
+.parag
+{
+  font-size: .8em;
+  font-weight: normal;  
+  text-align: justify;
+  padding: 0 10px;
+}
